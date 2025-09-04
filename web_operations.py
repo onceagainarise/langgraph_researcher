@@ -102,7 +102,7 @@ def _trigger_and_download_snapshot_retrieve(trigger_url, params, data, operation
     raw_data = download_snapshot(snapshot_id)
     return raw_data
 
-def reddit_search_api(keyword, date="All time", sort_by="Hot", num_of_posts=5):
+def reddit_search_api(keyword, date="All time", sort_by="Hot", num_of_posts=75):
     trigger_url = "https://api.brightdata.com/datasets/v3/trigger"
 
     params = {
